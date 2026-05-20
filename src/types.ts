@@ -1,1 +1,1 @@
-export type Tab = 'world' | 'romance' | 'main' | 'supporting';
+export type Tab = 'world' | 'romance' | 'main' | 'supporting' | 'gallery';

@@ -1,4 +1,4 @@
-import { Globe, Heart, Asterisk, Users } from 'lucide-react';
+import { Globe, Heart, Asterisk, Users, Image as ImageIcon } from 'lucide-react';
 import { Tab } from '../types';
 
 interface NavigationProps {
@@ -12,10 +12,11 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
     { id: 'romance', label: '로맨스', icon: Heart },
     { id: 'main', label: '캐릭터', icon: Asterisk },
     { id: 'supporting', label: '주변인물', icon: Users },
+    { id: 'gallery', label: '갤러리', icon: ImageIcon },
   ] as const;
 
   return (
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[768px] bg-[#05070A] border-t border-white/10 grid grid-cols-4 px-2 pb-8 pt-0 z-50">
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[768px] bg-[#05070A] border-t border-white/10 grid grid-cols-5 px-2 pb-8 pt-0 z-50">
       {tabs.map((tab) => {
         const Icon = tab.icon;
         const isActive = activeTab === tab.id;
