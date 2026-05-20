@@ -1,0 +1,6 @@
+{
+  "name": "LOUIS DE PEMBROKE",
+  "description": "A high-density romance and role-play prompt generator featuring deep lore, character backgrounds, and relationship states set in the modern aesthetic universe of Argentmane Dynamics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
