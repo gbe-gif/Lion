@@ -9,6 +9,7 @@ import WorldView from './views/WorldView';
 import RomanceView from './views/RomanceView';
 import MainCharacterView from './views/MainCharacterView';
 import SupportingCharactersView from './views/SupportingCharactersView';
+import CommandsView from './views/CommandsView';
 import GalleryView from './views/GalleryView';
 import { Tab } from './types';
 
@@ -25,7 +26,8 @@ export default function App() {
             {activeTab === 'world' ? 'World & Lore' : 
              activeTab === 'romance' ? 'Romance' :
              activeTab === 'main' ? 'Louis-Marcellien' : 
-             activeTab === 'supporting' ? 'Others' : 'Gallery Archive'}
+             activeTab === 'supporting' ? 'Others' : 
+             activeTab === 'commands' ? 'Commands' : 'Gallery Archive'}
           </h1>
         </div>
         <div className="text-right pb-1 hidden sm:block">
@@ -39,6 +41,7 @@ export default function App() {
         {activeTab === 'romance' && <RomanceView />}
         {activeTab === 'main' && <MainCharacterView />}
         {activeTab === 'supporting' && <SupportingCharactersView />}
+        {activeTab === 'commands' && <CommandsView />}
         {activeTab === 'gallery' && <GalleryView />}
       </main>
 
