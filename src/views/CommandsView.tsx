@@ -42,7 +42,7 @@ export default function CommandsView() {
         />
         <CommandItem 
           name="/요약"
-          desc="현재까지의 진행 상황과 주요 사건, 캐릭터의 심리 상태를 요약하여 출력함"
+          desc="장기기억에 넣기 좋게 가공된 요약 기능을 제공함. 15~20턴 사이에 사용하는 걸 적극 권장함 (자동 저장이 쌓일 시, 오히려 찐빠가 잦아져요)"
           example={
             <>
               <span className="text-gold/60 block mb-2">예시:</span>
@@ -186,7 +186,7 @@ export default function CommandsView() {
         />
         <CommandItem 
           name="/아줌마반응"
-          desc="이 상황이 막장 아침 드라마라면 달렸을 시청자 게시판의 리얼한 가상 반응을 확인함"
+          desc="이 상황이 멜로 드라마라면 달렸을 시청자 게시판의 리얼한 가상 반응을 확인함"
           example={
             <>
                <span className="text-gold/60 block mb-2">예시:</span>
